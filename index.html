@@ -7,7 +7,7 @@
   <title>Deep Patel</title>
 
   <!-- favicon icon -->
-  <link rel="icon" href="./images/logo/logo.png" />
+  <link rel="icon" href="./images/logo/logo-1.png" />
 
   <!-- bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,20 +21,36 @@
 
   <!-- icon link -->
   <link rel="stylesheet" href="./css/all.min.css" />
+
+  <!-- head-line.css -->
+  <link rel="stylesheet" href="./css/3danimation.css" />
+
+  <!-- animate -->
+  <link rel="stylesheet" href="./css/animate.min.css" />
+
+  <!-- aos.js -->
+  <link rel="stylesheet" href="./css/aos.css" />
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body>
+<body style="scroll-behavior: smooth;">
 
+  <!-- loader -->
+  <!-- <div class="loader"></div> -->
   <!-- header -->
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <nav class="navbar navbar-dark fixed-top py-3">
+      <nav class="navbar navbar-dark fixed-top">
         <div class="container">
-          <div class="col-3">
-            <h1 class="text-light">Deep patel</h1>
-            <!-- <a class="navbar-brand" href="#">
-                <img src="./images/logo/logo.png" alt="logo">
-              </a> -->
+          <div class="col-3" style="line-height: 0;">
+            <a class="navbar-brand fw-bold" href="#">
+              <div data-tilt>
+                <img src="./images/logo/logo-1.png" alt="logo" class="img-fluid"
+                  style="width: 80px; border-radius: 50%;">
+              </div>
+            </a>
           </div>
           <div class="col-8">
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
@@ -46,20 +62,23 @@
               </div>
               <div class="offcanvas-body">
                 <div class="manu-bar">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <ul class="navbar-nav flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link active py-3 px-5" aria-current="page" href="#">Home</a>
+                      <a class="nav-link active py-3 px-5" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link py-3 px-5" href="#">About Me</a>
+                      <a class="nav-link py-3 px-5" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link py-3 px-5" href="#">Skills</a>
+                      <a class="nav-link py-3 px-5" href="#skills">Skills</a>
                     <li class="nav-item">
-                      <a class="nav-link py-3 px-5" href="#">Portfolio</a>
+                      <a class="nav-link py-3 px-5" href="#Portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link py-3 px-5" href="#">Contact</a>
+                      <a class="nav-link py-3 px-5" href="#Service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link py-3 px-5" href="#Contact">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -77,19 +96,24 @@
   </header>
 
   <!-- banner -->
-  <section>
-    <div class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6">
-            <div class="my-contane">
-              <h1 class="fw-bolder text-light">
-                <span class="h2 text-warning">HELLO!</span><BR>
+  <section class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6">
+          <div class="my-contane">
+            <h1 class="fw-bolder text-light cd-headline rotate-1" data-aos="zoom-in-up">
+              <span class="h2 text-warning">HELLO!</span><BR>
                 I<span class="text-warning">'</span>M DEEP PATEL<br>
-                <span class="text-warning">Web developer</span>
-              </h1>
-              <p class="text-light fs-6 display-6 lh-lg"">I'm a passionate Web developer with a mission to create delightful and intuitive digital experiences. With a strong foundation in design principles and a keen eye for detail, I specialize in translating complex ideas into user-friendly interfaces that captivate and engage.</p>
-              <div class=" my-socieal d-flex align-items-center justify-content-around mt-5 pt-3">
+              <p class="text-light fs-4 display-4 lh-lg">I'm a passionate</p>
+              <span class="text-warning cd-words-wrapper">
+                <b class="is-visible text-uppercase">Web Developer</b>
+                <b class="text-uppercase">Frontend Developer</b>
+                <b class="text-uppercase">Backend Developer</b>
+                <b class="text-uppercase fs-sm-5">Professional Coder</b>
+                <b class="text-uppercase">Programmer</b>
+              </span>
+            </h1>
+            <div class=" my-socieal d-flex align-items-center justify-content-around mt-5 pt-3">
               <div class="col-xl-6">
                 <button type="button" class="btn btn-outline-warning py-3 px-5">Contact Me
                   <i class="fa-solid fa-arrow-right ps-3"></i>
@@ -97,29 +121,29 @@
               </div>
               <div class="col-6">
                 <div class="socieal-midda-icon">
-                  <ul class="d-flex list-unstyled justify-content-around mb-0">
+                  <ul class="d-flex list-unstyled justify-content-around">
                     <li>
-                      <a href="#">
+                      <a href="https://www.facebook.com/">
                         <i class="fa-brands fa-facebook-f"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://twitter.com/">
                         <i class="fa-brands fa-twitter"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.instagram.com/">
                         <i class="fa-brands fa-instagram"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.linkedin.com/feed/">
                         <i class="fa-brands fa-linkedin"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://github.com/">
                         <i class="fa-brands fa-github"></i>
                       </a>
                     </li>
@@ -132,297 +156,68 @@
         <div class="col-xl-1"></div>
         <div class="col-xl-5">
           <div class="my-face d-flex align-items-center">
-            <div class="my-img d-none d-xl-block">
+            <div class="my-img d-none d-xl-block" data-tilt>
               <img src="./images/bg-img/Deep.png" alt="my-img" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
   </section>
 
   <!-- MY WORLD -->
-  <section>
-    <div class="my-world pt-100 pb-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="welcome">
-              <h2 class="text-center text-light fw-bold mb-4">WELCOME TO MY WORLD</h2>
-              <p class="text-center text-light fs-5 mb-5">I'm a young tech enthasist and entrepreneur who love to take
-                risk.</p>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-6 mb-3">
-            <div class="my-item-wrapper">
-              <div class="icons">
-                <i class="fa-solid fa-dna text-warning fs-1"></i>
-              </div>
-              <div class="content-icon">
-                <h3 class="text-light fs-2 fw-semibold my-4">Creativity</h3>
-                <p class="lh-base fs-6">
-                  Duis aute irure dolor in it esse cillum dolore eu fugiat nulla pari erunt mollit anim id est laborum.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 mb-3">
-            <div class="my-item-wrapper">
-              <div class="icons">
-                <i class="fa-solid fa-gem fs-1 text-warning"></i>
-              </div>
-              <div class="content-icon">
-                <h3 class="text-light fs-2 fw-semibold my-4">
-                  Dedication</h3>
-                <p class="lh-base fs-6">
-                  Beaboris nisi ut aliquip ex ea commodo consen cillum dolore eu fugiat nulla pariatur.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 mb-3">
-            <div class="my-item-wrapper">
-              <div class="icons">
-                <i class="fa-solid fa-rocket text-warning fs-1"></i>
-              </div>
-              <div class="content-icon">
-                <h3 class="text-light fs-2 fw-semibold my-4">Hard Work</h3>
-                <p class="lh-base fs-6">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offi llit anim id est laborum.
-                </p>
-              </div>
-            </div>
+  <section class="my-world pt-100 pb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="welcome">
+            <h2 class="text-center text-light fw-bold mb-4" data-aos="fade-up" data-aos-anchor-placement="top top">
+              WELCOME TO MY WORLD</h2>
+            <p class="text-center text-light fs-5 mb-5" data-aos="fade-up" data-aos-anchor-placement="top top">I'm a
+              young tech enthasist and entrepreneur who love to take
+              risk.</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Us -->
-  <section>
-    <div class="my-about pt-100 pb-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="about-img">
-              <img src="..." alt="about-img">
-            </div>
-          </div>
-          <div class="col-xl-6">
-            <div class="about-content">
-              <span class="text-warning fw-bold fs-5 " id="abmeout-me">About Me</span>
-              <h2 class="text-light fs-2 my-3 fw-bold">I am currently doing Master in Back and Development course from
-                Surat.
-              </h2>
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae obcaecati hic
-                perferendis ipsam facilis eius dolor. Illo dolor porro sunt? Libero sed unde, doloremque culpa magnam
-                asperiores cum perspiciatis dolorem?</p>
-            </div>
-            <div class="about-info d-flex">
-              <div class="col-xl-6">
-                <ul class="prosonal-info list-unstyled">
-                  <li>
-                    <h4 class="text-white fw-midium fs-5 fw-bold mt-4">NAME</h4>
-                    <p>Deep Patel</p>
-                  </li>
-                  <li>
-                    <h4 class="text-white fw-midium fs-5 fw-bold">Email</h4>
-                    <p><i class="fa-solid fa-envelope pe-1"></i>deeppatel7868@gmail.com</p>
-                  </li>
-                  <li>
-                    <h4 class="text-white fw-midium fs-5 fw-bold ">PHONE</h4>
-                    <p><i class="fa-solid fa-phone pe-1"></i>+91 7383-8844-01</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-xl-6">
-                <ul class="prosonal-info list-unstyled">
-                  <li>
-                    <h4 class="text-white fw-midium fs-5 fw-bold mt-4">AGE</h4>
-                    <p>23Years</p>
-                  </li>
-                  <li>
-                    <h4 class="text-white fw-midium fs-5 fw-bold ">Language</h4>
-                    <p>GUJARATI<span class="px-2">|</span class="px-2">HINDI<span class="px-2">|</span>ENGLISH</p>
-                  </li>
-                  <li>
-                    <h4 class="text-white fw-midium fs-5 fw-bold">EDUCATION</h4>
-                    <p>12 PASS<span class="px-2">|</span> B.COM</p>
-                  </li>
-                </ul>
+        <div class="d-flex" data-aos="fade-up" data-aos-anchor-placement="top top">
+          <div class="row">
+            <div class="col-xl-4 col-lg-6 mb-3">
+              <div class="my-item-wrapper">
+                <div class="icons">
+                  <i class="fa-solid fa-dna text-warning fs-1"></i>
+                </div>
+                <div class="content-icon">
+                  <h3 class="text-light fs-2 fw-semibold my-4">Creativity</h3>
+                  <p class="lh-base fs-6">
+                    Duis aute irure dolor in it esse cillum dolore eu fugiat nulla pari erunt mollit anim id est
+                    laborum.
+                  </p>
+                </div>
               </div>
             </div>
-            <button type="button" class="btn btn-outline-warning mt-4 py-3 px-5">DOWNLOAD CV</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- my skills -->
-  <section>
-    <div class="skill-section pt-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="about-content">
-              <span class="text-warning fw-bold fs-5 " id="abmeout-me">MY SKILLS</span>
-              <h2 class="text-light fs-1 my-3 fw-bolder">I'm great in what I do and I'm loving it
-              </h2>
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae obcaecati hic
-                perferendis ipsam facilis eius dolor. Illo dolor porro sunt? Libero sed unde, doloremque culpa magnam
-                asperiores cum perspiciatis dolorem?</p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h5 class="text-white">HTML5<span class="px-3">CSS3</span>javascript</h5>
-            <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25"
-              aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-warning" style="width: 85%"></div>
-            </div>
-            <h5 class="text-white">bootstrap</h5>
-            <div class="progress mb-3" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
-              aria-valuemax="100">
-              <div class="progress-bar bg-warning" style="width: 80%"></div>
-            </div>
-            <h5 class="text-white">C Language</h5>
-            <div class="progress mb-3" role="progressbar" aria-label="Warning example" aria-valuenow="75"
-              aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-warning" style="width: 80%"></div>
-            </div>
-            <h5 class="text-white">C++ Language with DSA</h5>
-            <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0"
-              aria-valuemax="100">
-              <div class="progress-bar bg-warning" style="width: 80%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- portfolio -->
-  <section>
-    <div class="portfolio-section pt-100 pb-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="welcome">
-              <h2 class="text-center text-light fw-bold mb-4">PORTFOLIO</h2>
-              <p class="text-center text-light fs-5 mb-5 fw-bold">Elevate your brand to new
-                heights with our portfolio expertise</p>
-            </div>
-          </div>
-          <div class="portfolio-menu">
-            <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
-              <li class="nav-item px-2" role="presentation">
-                <button class="nav-link active text-white border border-warning mb-3" id="pills-home-tab"
-                  data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
-                  aria-selected="true">All</button>
-              </li>
-              <li class="nav-item px-2" role="presentation">
-                <button class="nav-link text-white border border-warning mb-3" id="pills-Programming-tab"
-                  data-bs-toggle="pill" data-bs-target="#pills-Programming" type="button" role="tab"
-                  aria-controls="pills-Programming" aria-selected="false">Programming</button>
-              </li>
-              <li class="nav-item px-2" role="presentation">
-                <button class="nav-link text-white border border-warning mb-3" id="pills-Development-tab"
-                  data-bs-toggle="pill" data-bs-target="#pills-Development" type="button" role="tab"
-                  aria-controls="pills-Development" aria-selected="false">Development</button>
-              </li>
-              <li class="nav-item px-2" role="presentation">
-                <button class="nav-link text-white border border-warning mb-3" id="pills-Design-tab"
-                  data-bs-toggle="pill" data-bs-target="#pills-Design" type="button" role="tab"
-                  aria-controls="pills-Design" aria-selected="false">Design</button>
-              </li>
-              <li class="nav-item px-2" role="presentation">
-                <button class="nav-link text-white border border-warning mb-3" id="pills-disabled-tab"
-                  data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab"
-                  aria-controls="pills-disabled" aria-selected="false">Application</button>
-              </li>
-            </ul>
-          </div>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
-              tabindex="0">...</div>
-            <div class="tab-pane fade" id="pills-Programming" role="tabpanel" aria-labelledby="pills-Programming-tab"
-              tabindex="0">...</div>
-            <div class="tab-pane fade" id="pills-Design" role="tabpanel" aria-labelledby="pills-Design-tab"
-              tabindex="0">...</div>
-            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
-              tabindex="0">...</div>
-            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
-              tabindex="0">...</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- my-Contact -->
-  <section>
-    <div class="my-Contact pt-100 pb-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="welcome">
-              <h2 class="text-center text-light fw-bold mb-4">GET IN TOUCH</h2>
-              <p class="text-center text-light fs-5 mb-5 fw-bold">Below are the details to reach out to me!</p>
-            </div>
-          </div>
-          <div class="my-cont row mb-5">
-            <div class="col-lg-4 d-flex align-items-lg-center justify-content-xxl-center">
-              <div class="cont-circal me-4">
-                <i class="fa-solid fa-location-dot"></i>
+            <div class="col-xl-4 col-lg-6 mb-3">
+              <div class="my-item-wrapper">
+                <div class="icons">
+                  <i class="fa-solid fa-gem fs-1 text-warning"></i>
+                </div>
+                <div class="content-icon">
+                  <h3 class="text-light fs-2 fw-semibold my-4">
+                    Dedication</h3>
+                  <p class="lh-base fs-6">
+                    Beaboris nisi ut aliquip ex ea commodo consen cillum dolore eu fugiat nulla pariatur.
+                  </p>
+                </div>
               </div>
-             <div class="add-cont">
-              <h4 class="fs-2 fw-bold">Address</h4>
-              <p class="fs-5">surat, gujarat, india</p>
-             </div>
             </div>
-            <div class="col-lg-4 d-flex align-items-lg-center justify-content-xxl-center">
-              <div class="cont-circal me-4">
-                <i class="fa-solid fa-phone"></i>
-              </div>
-             <div class="add-cont">
-              <h4 class="fs-2 fw-bold">Phone</h4>
-              <p class="fs-5">+91 7383-8844-01</p>
-             </div>
-            </div>
-            <div class="col-lg-4 d-flex align-items-lg-center justify-content-xxl-center">
-              <div class="cont-circal me-4">
-                <i class="fa-solid fa-envelope"></i>
-              </div>
-             <div class="add-cont">
-              <h4 class="fs-2  fw-bold">
-                Email</h4>
-              <p class="fs-5">deeppatel7868@gmail.com</p>
-             </div>
-            </div>
-          </div>
-          <div class="prosnal-toch d-flex">
-            <div class="col-lg-6"></div>
-            <div class="col-lg-6">
-              <div class="my-form">
-                <h2 class="fw-bold text-white mb-3 ps-3">Write me a message</h2>
-                <div class="form-msg">
-                  <form action="">
-                    <div class="form-contane row mb-4">
-                      <div class="col-md-6">
-                        <input type="text" name="uname" class="w-100 bg-transparent border-warning ps-3 mb-3" placeholder="name">
-                      </div>
-                      <div class="col-md-6">
-                        <input type="email" name="email" class="w-100 bg-transparent border-warning ps-3" placeholder="Email">
-                      </div>
-                    </div>
-                    <div class="form-area row mb-4">
-                      <div class="col-md-12 ">
-                        <textarea class="form-control mb-3 w-100 bg-transparent border-warning p-3" cols="30" rows="6"  placeholder="Your message here"></textarea>
-                      </div>
-                    </div>
-                  </form>
+            <div class="col-xl-4 col-lg-6 mb-3">
+              <div class="my-item-wrapper">
+                <div class="icons">
+                  <i class="fa-solid fa-rocket text-warning fs-1"></i>
+                </div>
+                <div class="content-icon">
+                  <h3 class="text-light fs-2 fw-semibold my-4">Hard Work</h3>
+                  <p class="lh-base fs-6">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offi llit anim id est laborum.
+                  </p>
                 </div>
               </div>
             </div>
@@ -432,15 +227,612 @@
     </div>
   </section>
 
+  <!-- About Us -->
+  <section class="my-about pt-100 pb-100" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="about-img" data-tilt>
+            <img src="./images/bg-img/about-img-1.png" class="img-fluid" alt="about-img-1">
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="about-content">
+            <span class="text-warning fw-bold fs-5 " id="abmeout-me">About Me</span>
+            <h2 class="text-light fs-2 my-3 fw-bold">I am currently doing Master in Back and Development course from
+              Surat.
+            </h2>
+            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae obcaecati hic
+              perferendis ipsam facilis eius dolor. Illo dolor porro sunt? Libero sed unde, doloremque culpa magnam
+              asperiores cum perspiciatis dolorem?</p>
+          </div>
+          <div class="about-info d-flex">
+            <div class="col-xl-6">
+              <ul class="prosonal-info list-unstyled">
+                <li>
+                  <h4 class="text-white fw-midium fs-5 fw-bold mt-4">NAME</h4>
+                  <p>Deep Patel</p>
+                </li>
+                <li>
+                  <h4 class="text-white fw-midium fs-5 fw-bold">Email</h4>
+                  <p><i class="fa-solid fa-envelope pe-1"></i>deeppatel7868@gmail.com</p>
+                </li>
+                <li>
+                  <h4 class="text-white fw-midium fs-5 fw-bold ">PHONE</h4>
+                  <p><i class="fa-solid fa-phone pe-1"></i>+91 7383-8844-01</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xl-6">
+              <ul class="prosonal-info list-unstyled">
+                <li>
+                  <h4 class="text-white fw-midium fs-5 fw-bold mt-4">AGE</h4>
+                  <p>23Years</p>
+                </li>
+                <li>
+                  <h4 class="text-white fw-midium fs-5 fw-bold ">Language</h4>
+                  <p>GUJARATI<span class="px-2">|</span class="px-2">HINDI<span class="px-2">|</span>ENGLISH</p>
+                </li>
+                <li>
+                  <h4 class="text-white fw-midium fs-5 fw-bold">EDUCATION</h4>
+                  <p>12 PASS<span class="px-2">|</span> B.COM</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button type="button" class="btn btn-outline-warning mt-4 py-3 px-5">DOWNLOAD CV</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- my skills -->
+  <section class="skill-section pt-100 pb-100" id="skills">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="about-content">
+            <span class="text-warning fw-bold fs-5 " id="abmeout-me">MY SKILLS</span>
+            <h2 class="text-light fs-1 my-3 fw-bolder">I'm great in what I do and I'm loving it
+            </h2>
+            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae obcaecati hic
+              perferendis ipsam facilis eius dolor. Illo dolor porro sunt? Libero sed unde, doloremque culpa magnam
+              asperiores cum perspiciatis dolorem?</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide d-flex align-items-center justify-content-center">
+                <img src="./images/bg-img/HTML5_badge.png" alt="html-logo" style="width: 100px;">
+                <h2 class="ms-3">HTML5</h2>
+              </div>
+              <div class="swiper-slide d-flex align-items-center justify-content-center">
+                <img src="./images/bg-img/css3-icon-28.jpg" alt="css3-icon-28" style="width: 100px;">
+                <h2 class="ms-3">CSS3</h2>
+              </div>
+              <div class="swiper-slide d-flex align-items-center justify-content-center">
+                <img src="./images/bg-img/sass-original.svg" alt="sass-original" style="width: 100px;">
+                <h2 class="ms-3">SASS</h2>
+              </div>
+              <div class="swiper-slide d-flex align-items-center justify-content-center">
+                <img src="./images/bg-img/bootstrap-logo.png" alt="bootstrap-logo" style="width: 100px;">
+                <h2 class="ms-3">BOOTSTRAP</h2>
+              </div>
+              <div class="swiper-slide d-flex align-items-center justify-content-center">
+                <img src="./images/bg-img/tailwind.png" alt="tailwind.png" style="width: 100px;">
+                <h2 class="ms-3">TAILWIND</h2>
+              </div>
+              <div class="swiper-slide d-flex align-items-center justify-content-center">
+                <img src="./images/bg-img/javascript-original.svg" alt="javascript-original" style="width: 100px;">
+                <h2 class="ms-3">JAVASCRIPT</h2>
+              </div>
+              <div class="swiper-slide d-flex align-items-center justify-content-center">
+                <img src="./images/bg-img/c-original.svg" alt="c-original.svg" style="width: 100px;">
+                <h2 class="ms-3">C Language</h2>
+              </div>
+              <div class="swiper-slide d-flex align-items-center justify-content-center">
+                <img src="./images/bg-img/cplusplus-original.svg" alt="cplusplus-original" style="width: 100px;">
+                <h2 class="ms-3">C++ Language</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- portfolio -->
+  <section class="portfolio-section pt-100 pb-100" id="Portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="welcome">
+            <h2 class="text-center text-light fw-bold mb-4" data-aos="fade-up" data-aos-anchor-placement="top top">
+              PORTFOLIO</h2>
+            <p class="text-center text-light fs-5 mb-5 fw-bold" data-aos="fade-up" data-aos-anchor-placement="top top">
+              Elevate your brand to new
+              heights with our portfolio expertise</p>
+          </div>
+        </div>
+        <!-- portfolio section -->
+        <div class="portfolio-menu">
+          <ul class="nav nav-pills justify-content-center mb-5" id="pills-tab" role="tablist">
+            <li class="nav-item px-2" role="presentation">
+              <button class="nav-link active text-white border border-warning mb-3" id="pills-Development-tab"
+                data-bs-toggle="pill" data-bs-target="#pills-Development" type="button" role="tab"
+                aria-controls="pills-Development" aria-selected="false">Development</button>
+            </li>
+            <li class="nav-item px-2" role="presentation">
+              <button class="nav-link text-white border border-warning mb-3" id="pills-Programming-tab"
+                data-bs-toggle="pill" data-bs-target="#pills-Programming" type="button" role="tab"
+                aria-controls="pills-Programming" aria-selected="false">Programming</button>
+            </li>
+            <li class="nav-item px-2" role="presentation">
+              <button class="nav-link text-white border border-warning mb-3" id="pills-Design-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-Design" type="button" role="tab" aria-controls="pills-Design"
+                aria-selected="false">web Design</button>
+            </li>
+            <li class="nav-item px-2" role="presentation">
+              <button class="nav-link text-white border border-warning mb-3" id="pills-disabled-tab"
+                data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab"
+                aria-controls="pills-disabled" aria-selected="false">Application Design</button>
+            </li>
+          </ul>
+        </div>
+        <!-- work-card section -->
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane show active fade" id="pills-Development" role="tabpanel"
+            aria-labelledby="pills-Development-tab" tabindex="0">
+            <div class="row row-gap-5">
+              <div class="col-lg-4">
+                <div class="work-card">
+                  <div class="img-card">
+                    <img src="./images/bg-img/html-web.png" alt="html-web" class="img-fluid">
+                  </div>
+                  <div class=" contant-img">
+                    <a data-bs-toggle="modal" href="#html-web">
+                      <i class="fa-solid fa-plus text-white"></i>
+                    </a>
+                  </div>
+                  <!-- work-box-1 modal-->
+                  <div class="modal fade" id="html-web" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title fs-5" id="exampleModalLabel">HTML5 project</h2>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mode-img">
+                            <img src="./images/bg-img/html-web.png" alt="img-5" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="work-card">
+                  <div class="img-card">
+                    <img src="./images/bg-img/my-web-1.png" alt="protfolio-img-3" class="img-fluid">
+                  </div>
+                  <div class=" contant-img">
+                    <a data-bs-toggle="modal" href="#my-web-1">
+                      <i class="fa-solid fa-plus text-white"></i>
+                    </a>
+                  </div>
+                  <!-- work-box-2 model-->
+                  <div class="modal fade" id="my-web-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title fs-5" id="exampleModalLabel">css project</h2>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mode-img">
+                            <img src="./images/bg-img/my-web-1.png" alt="img-5" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="work-card">
+                  <div class="img-card">
+                    <img src="./images/bg-img/my-web-2.png" alt="protfolio-img-3" class="img-fluid">
+                  </div>
+                  <div class=" contant-img">
+                    <a data-bs-toggle="modal" href="#my-web-2">
+                      <i class="fa-solid fa-plus text-white"></i>
+                    </a>
+                  </div>
+                  <!-- work-box-3 model-->
+                  <div class="modal fade" id="my-web-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title fs-5" id="exampleModalLabel">sass project</h2>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mode-img">
+                            <img src="./images/bg-img/my-web-2.png" alt="img-5" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="work-card">
+                  <div class="img-card">
+                    <img src="./images/bg-img/my-web-3.png" alt="protfolio-img-2" class="img-fluid">
+                  </div>
+                  <div class=" contant-img">
+                    <a data-bs-toggle="modal" href="#my-web-3">
+                      <i class="fa-solid fa-plus text-white"></i>
+                    </a>
+                  </div>
+                  <!-- work-box-4 model-->
+                  <div class="modal fade" id="my-web-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title fs-5" id="exampleModalLabel">jquery colortheme project</h2>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mode-img">
+                            <img src="./images/bg-img/my-web-3.png" alt="img-5" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="work-card">
+                  <div class="img-card">
+                    <img src="./images/bg-img/add-7.png" alt="protfolio-img-3" class="img-fluid">
+                  </div>
+                  <div class=" contant-img">
+                    <a data-bs-toggle="modal" href="#add-7">
+                      <i class="fa-solid fa-plus text-white"></i>
+                    </a>
+                  </div>
+                  <!-- work-box-5 model-->
+                  <div class="modal fade" id="add-7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title fs-5" id="exampleModalLabel">addmainpanel project</h2>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mode-img">
+                            <img src="./images/bg-img/add-7.png" alt="img-5" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="work-card">
+                  <div class="img-card">
+                    <img src="./images/bg-img/my-work-5.png" alt="protfolio-img-1" class="img-fluid">
+                  </div>
+                  <div class=" contant-img">
+                    <a data-bs-toggle="modal" href="#my-work-5">
+                      <i class="fa-solid fa-plus text-white"></i>
+                    </a>
+                  </div>
+                  <!-- work-box-6 model-->
+                  <div class="modal fade" id="my-work-5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title fs-5" id="exampleModalLabel">bootstrap project</h2>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mode-img">
+                            <img src="./images/bg-img/my-work-5.png" alt="img-5" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-Programming" role="tabpanel" aria-labelledby="pills-Programming-tab"
+            tabindex="0">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="work-card">
+                  <div class="img-card">
+                    <img src="./images/bg-img/computer-820281_1280.jpg" alt="protfolio-img-1" class="img-fluid">
+                  </div>
+                  <div class="contant-img">
+                    <h2 class="text-bg-warning text-light">PROGRAMMING</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="work-card">
+                  <div class="img-card">
+                    <img src="./images/bg-img/desk-593327_1280.jpg" alt="protfolio-img-2" class="img-fluid">
+                  </div>
+                  <div class="contant-img">
+                    <h2 class="text-bg-warning text-light">PROGRAMMING</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="work-card">
+                  <div class="img-card">
+                    <img src="./images/bg-img/business-2717066_1280.jpg" alt="protfolio-img-3" class="img-fluid">
+                  </div>
+                  <div class="contant-img">
+                    <h2 class="text-bg-warning text-light">PROGRAMMING</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+          <div class="row"></div>
+        </div>
+        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+          tabindex="0">...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service -->
+  <section class="service-section pt-100 pb-100" id="Service">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="welcome">
+            <h2 class="text-center text-light fw-bold mb-4" data-aos="fade-up" data-aos-anchor-placement="top top">
+              Service</h2>
+            <p class="text-center text-light fs-5 mb-5 fw-bold" data-aos="fade-up" data-aos-anchor-placement="top top">
+              Crafting stories through
+              design and innovation</p>
+          </div>
+        </div>
+        <div class="my-service-card d-flex" data-aos="fade-up" data-aos-anchor-placement="top top">
+          <div class="row row-gap-5">
+            <div class="col-lg-4">
+              <div class="service-done js-tilt">
+                <div class="service-icon d-flex justify-content-center align-items-center mx-auto mb-4">
+                  <i class="fa-solid fa-laptop fs-1"></i>
+                </div>
+                <h3 class="fs-2 fw-bolder text-white text-center mb-4 ">Web Development</h3>
+                <p class="text-center fs-5">Yeprehe nderit in voluptate velit esse prehen pteur sint occaecat cupidat
+                  cillum dolore eu fugiat nulla pan proide ulpa rum.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="service-done js-tilt">
+                <div class="service-icon d-flex justify-content-center align-items-center mx-auto mb-4">
+                  <i class="fa-solid fa-code fs-1"></i>
+                </div>
+                <h3 class="fs-2 fw-bolder text-white text-center mb-4 ">professional coder</h3>
+                <p class="text-center fs-5">Yeprehe nderit in voluptate velit esse prehen pteur sint occaecat cupidat
+                  cillum dolore eu fugiat nulla pan proide ulpa rum.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="service-done js-tilt">
+                <div class="service-icon d-flex justify-content-center align-items-center mx-auto mb-4">
+                  <i class="fa-solid fa-database fs-5"></i>
+                </div>
+                <h3 class="fs-2 fw-bolder text-white text-center mb-4 ">Programmer</h3>
+                <p class="text-center fs-5">Yeprehe nderit in voluptate velit esse prehen pteur sint occaecat cupidat
+                  cillum dolore eu fugiat nulla pan proide ulpa rum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- my-Contact -->
+  <section class="my-Contact pt-100 pb-100" id="Contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="welcome">
+            <h2 class="text-center text-light fw-bold mb-4" data-aos="fade-up" data-aos-anchor-placement="top top">GET
+              IN TOUCH</h2>
+            <p class="text-center text-light fs-5 mb-5 fw-bold" data-aos="fade-up" data-aos-anchor-placement="top top">
+              Below are the details to reach out to me!</p>
+          </div>
+        </div>
+        <div class="my-cont row mb-5">
+          <div class="col-lg-4 d-flex align-items-lg-center justify-content-xxl-center">
+            <div class="cont-circal me-4">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="add-cont">
+              <h4 class="fs-2 fw-bold">Address</h4>
+              <p class="fs-5">surat, gujarat, india</p>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-lg-center justify-content-xxl-center">
+            <div class="cont-circal me-4">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="add-cont">
+              <h4 class="fs-2 fw-bold">Phone</h4>
+              <p class="fs-5">+91 7383-8844-01</p>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-lg-center justify-content-xxl-center">
+            <div class="cont-circal me-4">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="add-cont">
+              <h4 class="fs-2  fw-bold">
+                Email</h4>
+              <p class="fs-5">deeppatel7868@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="prosnal-toch d-flex">
+          <div class="col-lg-6">
+            <div class="map" style="width: 90%;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59508.786747831466!2d72.77569554863281!3d21.219981999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f1e036267c9%3A0x5a012544102e6c2d!2sRed%20%26%20White%20Multimedia%20Education!5e0!3m2!1sen!2sin!4v1712821997991!5m2!1sen!2sin"
+                width="100%;" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="my-form">
+              <h2 class="fw-bold text-white mb-3 ps-3">Write me a message</h2>
+              <div class="form-msg">
+                <form action="">
+                  <div class="form-contane row mb-4">
+                    <div class="col-md-6">
+                      <input type="text" name="uname" class="w-100 bg-transparent border-warning ps-3 mb-3"
+                        placeholder="name">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="email" name="email" class="w-100 bg-transparent border-warning ps-3"
+                        placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-area row mb-4">
+                    <div class="col-md-12 ">
+                      <textarea class="form-control text-white mb-3 w-100 bg-transparent border-warning p-3" cols="30"
+                        rows="6" placeholder="Your message here"></textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- footer -->
-  <footer></footer>
+  <footer class="my-footer pt-100 pb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-logo mb-5 d-flex justify-content-center" data-aos="fade-up"
+            data-aos-anchor-placement="top top" data-tilt>
+            <a class="navbar-brand fw-bold text-light" href="#">
+              <img src="./images/logo/logo-1.png" alt="logo" class="img-fluid" style="width: 80px;">
+              <span class="fs-1 text-warning">Deep</span>
+            </a>
+          </div>
+          <div class="footer-contant text-center" data-aos="fade-up" data-aos-anchor-placement="top top">
+            <h2 class="text-light fs-1 fw-bold pb-3">More projects on
+              <a href="https://github.com" target="_blank" type="button"
+                class="btn btn-outline-warning text-light fs-4 fw-bold py-2 px-5">Github</a>
+            </h2>
+            <p class="text-white fs-4">I love to solve business problems & uncover hidden data stories</p>
+          </div>
+          <div class="col-12">
+            <div class="socieal-midda-icon" data-aos="fade-up" data-aos-anchor-placement="top top">
+              <ul class="d-flex list-unstyled justify-content-center mt-5">
+                <li>
+                  <a href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook-f fs-1 px-5"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/">
+                    <i class="fa-brands fa-twitter fs-1 px-5"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram fs-1 px-5"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/feed/">
+                    <i class="fa-brands fa-linkedin fs-1 px-5"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://mail.google.com/">
+                    <i class="fa-solid fa-envelope fs-1 px-5"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- map.js -->
-    <script src="./js/map.js"></script>
-</body> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- head-line.js -->
+  <script src="js/main.js"></script>
+
+  <!-- 3d effect -->
+  <script src="./js/tilt.jquery.min.js"></script>
+
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
+
+  <!-- script.js -->
+  <script src="./js/script.js"></script>
+
+  <script>
+    const tilt = $('.js-tilt').tilt()
+    tilt.methods.destroy.call(tilt);
+  </script>
+
+  <!-- aos.js -->
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+</body>
 
 </html>
